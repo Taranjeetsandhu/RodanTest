@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse--1540875436\testng-customsuite.xml</span>
+                    <span>C:\Users\admin\AppData\Local\Temp\testng-eclipse--1314758051\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -141,12 +141,9 @@
                   <a name="rodanFieldsTest2">
                   </a> <!-- rodanFieldsTest2 -->
                   <span class="method-name">rodanFieldsTest2</span>
-                  <div class="stack-trace">java.lang.AssertionError: Names do not match expected [michael brand] but found [Michael Brand]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at Mave_Project.RodanTest.rodanFieldsTest2(RodanTest.java:52)
+                  <div class="stack-trace">java.lang.AssertionError: Michael Brand expected:&lt;michael brand&gt; but was:&lt;Names do not match&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at Mave_Project.RodanTest.rodanFieldsTest2(RodanTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -195,7 +192,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse--1540875436\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\admin\AppData\Local\Temp\testng-eclipse--1314758051\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -248,11 +245,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'rodanFieldsTest2')
 data.setCell(0, 2, 'Mave_Project.RodanTest')
-data.setCell(0, 3, 60762);
+data.setCell(0, 3, 59102);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'rodanFieldsTest1')
 data.setCell(1, 2, 'Mave_Project.RodanTest')
-data.setCell(1, 3, 48727);
+data.setCell(1, 3, 49223);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -288,15 +285,23 @@ return data;
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7506 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">rodanFieldsTest1</span>
-                <span class="method-start">8927 ms</span>
+                <span class="method-start">9753 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">60133 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">rodanFieldsTest2</span>
-                <span class="method-start">58810 ms</span>
+                <span class="method-start">62501 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

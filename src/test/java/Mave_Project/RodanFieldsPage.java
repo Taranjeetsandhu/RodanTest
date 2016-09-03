@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 public class RodanFieldsPage {
 
 	WebDriver driver;
-	String Parent;
+	
 	By shopCare=By.xpath("//div[@class='hidden-xs']//a[@id='our-products']");
 	By allProducts=By.xpath("//div[@class='hidden-xs']//ul[@id='dropdown-menu']/li[7]/div/a");
 	By selectRedefine=By.xpath("//div[@id='main-content']//div[2]//input[@tabindex='1']");
@@ -19,9 +19,7 @@ public class RodanFieldsPage {
 	By selectPrice=By.xpath("//ul[@class='refine-products select-dropdown open']//li[2]//div[@class='pull-right']/div");
 	By label1=By.xpath("//div[@id='quick-filtered']/ul/li[1]//label");
 	By label2=By.xpath("//div[@id='quick-filtered']/ul/li[2]//label");
-	By product1=By.xpath("//div[@id='main-content']/div[5]/div[1]/div[1]/a[1]/img");
-	By product2=By.xpath("//div[@id='main-content']/div[5]/div[1]/div[1]/a[2]/input");
-	By priceOfProduct=By.xpath(".//*[@id='main-content']/div[5]/div[1]/p/span[1]");
+	By priceOfProduct=By.xpath("//div[@id='main-content']/div[5]/div[1]//span[1]");
 
 	public  RodanFieldsPage (WebDriver driver){
 		this.driver=driver;
@@ -79,7 +77,13 @@ public class RodanFieldsPage {
 
 	}
 
-	
+	public int verifyPrice(){
+	String s=	driver.findElement(priceOfProduct).getText();
+	String[] sa= s.split("$");
+	System.out.println(sa);
+	int i = Integer.parseInt("71");
+	return i;
+	}
 
 }
 

@@ -2,7 +2,6 @@ package Mave_Project;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,6 +11,7 @@ public class EnrollNowPage {
 	WebDriver driver;
 	String beforeSelection;
 	String	Parent;
+	
 	By becomeAConsultant=By.xpath(".//a[@id='corp-opp']");
 	By enrollNow=By.xpath("//nav[@class='row navbar navbar-inverse hidden-xs']//li[@id='BusinessSystemBar']//li[2]//a");
 	By procedures=By.xpath("//div[@id='disclaimer']/div/p/a[1]");
@@ -19,7 +19,7 @@ public class EnrollNowPage {
 	By clickSearch=By.xpath("//button[@id='search-sponsor-button']");
 	By clickProduct=By.xpath("//div[@class='the-search-results']/div[1]//div[@class='sponsorDataDiv']");
 	By selectProduct=By.xpath("//div[@class='the-search-results']/div[1]//div[@class='sponsorDataDiv']//input[@class]");
-	By beforeSelectionName=By.xpath(".//*[@id='search-results']/div/div[1]/form/div/div/div[1]/ul/li[1]");
+	By beforeSelectionName=By.xpath("//div[@id='search-results']/div/div[1]/form//li[1]");
 	By afterSelectionName=By.xpath("//div[@id='sponsorInfo']/div[1]/a");
 
 

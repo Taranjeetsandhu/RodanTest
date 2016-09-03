@@ -3,8 +3,8 @@ package Mave_Project;
 
 
 
+
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -41,6 +41,9 @@ public class RodanTest {
 		rodanFields.selectRedefine();
 		Assert.assertTrue(rodanFields.verifyLabel1(), "Labels not matching");
 		Assert.assertTrue(rodanFields.verifyLabel2(), "Labels not matching");
+	/*	Assert.assertTrue( rodanFields.verifyPrice(),"Error, random is too high" );
+		 assertTrue("Error, random is too high", rodanFields.verifyPrice() <= 200);
+		 assertThat(rodanFields.verifyPrice().*/
 		//rodanFields.quitBrowser1();
 		
 	}

@@ -2,31 +2,36 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="119586" started-at="2016-09-03T17:18:29Z" finished-at="2016-09-03T17:20:29Z">
+  <suite name="Default suite" duration-ms="121620" started-at="2016-09-03T18:24:44Z" finished-at="2016-09-03T18:26:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="119586" started-at="2016-09-03T17:18:29Z" finished-at="2016-09-03T17:20:29Z">
+    <test name="Default test" duration-ms="121620" started-at="2016-09-03T18:24:44Z" finished-at="2016-09-03T18:26:45Z">
       <class name="Mave_Project.RodanTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Mave_Project.RodanTest@7f26bd42]" name="setUp" is-config="true" duration-ms="8923" started-at="2016-09-03T22:48:29Z" finished-at="2016-09-03T22:48:38Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Mave_Project.RodanTest@16d1581c]" name="setUp" is-config="true" duration-ms="7503" started-at="2016-09-03T23:54:44Z" finished-at="2016-09-03T23:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="rodanFieldsTest1()[pri:0, instance:Mave_Project.RodanTest@7f26bd42]" name="rodanFieldsTest1" duration-ms="48727" started-at="2016-09-03T22:48:38Z" finished-at="2016-09-03T22:49:27Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Mave_Project.RodanTest@16d1581c]" name="setUp" is-config="true" duration-ms="2247" started-at="2016-09-03T23:54:51Z" finished-at="2016-09-03T23:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="rodanFieldsTest1()[pri:0, instance:Mave_Project.RodanTest@16d1581c]" name="rodanFieldsTest1" duration-ms="49223" started-at="2016-09-03T23:54:53Z" finished-at="2016-09-03T23:55:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rodanFieldsTest1 -->
-        <test-method status="FAIL" signature="rodanFieldsTest2()[pri:0, instance:Mave_Project.RodanTest@7f26bd42]" name="rodanFieldsTest2" duration-ms="60762" started-at="2016-09-03T22:49:28Z" finished-at="2016-09-03T22:50:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Mave_Project.RodanTest@16d1581c]" name="setUp" is-config="true" duration-ms="2368" started-at="2016-09-03T23:55:44Z" finished-at="2016-09-03T23:55:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="rodanFieldsTest2()[pri:0, instance:Mave_Project.RodanTest@16d1581c]" name="rodanFieldsTest2" duration-ms="59102" started-at="2016-09-03T23:55:46Z" finished-at="2016-09-03T23:56:45Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Names do not match expected [michael brand] but found [Michael Brand]]]>
+              <![CDATA[Michael Brand expected:<michael brand> but was:<Names do not match>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Names do not match expected [michael brand] but found [Michael Brand]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at Mave_Project.RodanTest.rodanFieldsTest2(RodanTest.java:52)
+              <![CDATA[java.lang.AssertionError: Michael Brand expected:<michael brand> but was:<Names do not match>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at Mave_Project.RodanTest.rodanFieldsTest2(RodanTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
