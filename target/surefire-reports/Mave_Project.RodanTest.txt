@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: Mave_Project.RodanTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 120.987 sec <<< FAILURE!
+rodanFieldsTest2(Mave_Project.RodanTest)  Time elapsed: 57.23 sec  <<< FAILURE!
+java.lang.AssertionError: Names do not match expected [michael brand] but found [Michael Brand]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at Mave_Project.RodanTest.rodanFieldsTest2(RodanTest.java:62)
