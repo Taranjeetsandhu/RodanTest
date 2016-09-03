@@ -4,6 +4,9 @@ package Mave_Project;
 
 
 import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -13,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+
 @Listeners(MyListeners.class)
 public class RodanTest {
 
@@ -21,6 +25,7 @@ public class RodanTest {
 	RodanFieldsPage rodanFields=new RodanFieldsPage(driver);
 	EnrollNowPage enrollNow=new EnrollNowPage(driver);
 
+	@BeforeMethod
 	@BeforeClass
 	public void setUp() throws InterruptedException{
 
@@ -49,7 +54,7 @@ public class RodanTest {
 		Assert.assertTrue(enrollNow.verifyProcedureURL().contains("Policies_Procedures_CANADA."), "incorrect");
 		enrollNow.closeProcedure();
 		enrollNow.switchAndSearch();
-		Assert.assertEquals(enrollNow.AfterSelection(), enrollNow.beforeSelection(), "Names do not match");
+		AssertJUnit.assertEquals(enrollNow.AfterSelection(), enrollNow.beforeSelection(), "Names do not match");
 		enrollNow.quitBrowser2();
 	}
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="TestSuite" thread-count="2" parallel="methods >
+<suite name="TestSuite" thread-count="2" parallel="methods" >
 <test name="testGuru">
 <classes>
 <class name="Mave_Project.RodanTest">
